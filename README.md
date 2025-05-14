@@ -29,3 +29,10 @@ The layout, animations, and styling are thoughtfully done and well integrated. N
 ## Oblig 3 improved
 FEEDBACK FROM TEACHER
 
+
+
+GITHUB PAGES
+https://posepilt.github.io/idg1293-portfolio/projects/oblig1/index.html
+
+FOR ICONS
+https://icons8.com/icons/set/whatsapp
