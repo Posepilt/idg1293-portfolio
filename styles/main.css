@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+body {
+  background-color: rgb(193, 230, 193);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text {
+  inline-size: min(95vw, 60ch);
+}
+.hero__symbols {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero__img {
+  inline-size: min(95vw, 60ch);
+}
+
+.skills__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padding-1 {
+  padding: 1rem;
+}/*# sourceMappingURL=main.css.map */
