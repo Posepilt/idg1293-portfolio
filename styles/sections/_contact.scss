@@ -1,0 +1,14 @@
+.contact {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    &__icons {
+        height: 2rem;
+    }
+    &__icons img {
+        height: 2rem;
+        width: 2rem;
+    }
+}

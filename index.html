@@ -7,26 +7,25 @@
     <title>Portfolio | Adrian</title>
 </head>
 <body>
-    <main>
-        <section class="hero text-center">
-            <div class="hero__text padding-1">
-                <h1>Hello world &#128075<span class="block">My name is Adrian</span></h1>
-                <p>and I'm a full-stack web developer in the making</p>
-                <div class="hero__symbols">
-                    <img src="./images/linked-in-icon.svg" alt="">
-                    <img src="./images/github-icon-small.svg" alt="">
-                    <img src="./images/whatsapp-icon.svg" alt="">
-                    <img src="./images/e-mail-icon.svg" alt="">
+    <main class="stack-main">
+        <section class="hero text-center padding-1">
+                <div class="hero__intro">
+                    <h1 class="hero__heading">Hello world</h1>
+                    <h2 class="hero__subheading">My name is Adrian</h2>
+                    <p class="hero__description">and I'm a full-stack web developer in the making</p>
                 </div>
-            </div>
-            <div class="hero__img padding-1">
-                <img src="./images/portrait.png" alt="" width="100%" class="block">
-                <p>&#127874 27 years</p>
-                <p>&#128205 Gjøvik, Norway</p>
-                <p>&#127891 Bachelors Web Utvikling, NTNU</p>
-            </div>
+                <div class="hero__profile stack-section">
+                    <img src="./images/cr.jpg" alt="" class="block">
+                    <ul class="hero__bio">
+                        <li>&#127874 27 years</li>
+                        <li>&#128205 Gjøvik, Norway</li>
+                        <li>&#127891 Bachelors Web Utvikling, NTNU</li>
+                    </ul>
+                </div>
+                <a href="" class="hero__arrow">&#129095</a>
         </section>
-        <section class="skills text-center">
+        
+        <section class="skills text-center stack-section">
             <h2>My skills</h2>
             <div class="skills__icons">
                 <img src="./images/vscode-icon.svg" alt="">
@@ -41,10 +40,40 @@
                 <img src="./images/adobe-illustrator-icon.svg" alt="">
             </div>
         </section>
-        <section class="work">
+        <section class="work padding-1 stack-section">
             <h2>My work</h2>
-            
+            <div class="work__grid">
+                <div class="oblig1">
+                    <img src="./images/oblig1-cover.png" alt="">
+                    <h3>Product page</h3>
+                    <p>A clean product page for a Kobo e-reader. Used Flexbox and Grid for layout. Includes hover effects and a scrollable image gallery for interactivity.</p>
+                </div>
+                <div class="oblig2">
+                    <img src="./images/oblig2-cover.png" alt="">
+                    <h3>Poster</h3>
+                    <p>A responsive poster design showing how the web impacts the environment. Built with SVG's and tools from Utopia for fluid design.</p>
+                </div>
+                <div class="oblig3">
+                    <img src="./images/oblig3-cover.png" alt="">
+                    <h3>Scrollytelling</h3>
+                    <p>An animated story inspired by United Nations' Sustainable Development Goal 14, about life below water. For the animations there is used a mix of GSAP, CSS animations and SMIL.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact padding-1">
+            <div class="contact__container">
+                <h2 class="inline">Get in touch</h2>
+                <div class="contact__icons">
+                    <img src="./images/linked-in-icon.svg" alt="">
+                    <img src="./images/github-icon-small.svg" alt="">
+                    <img src="./images/whatsapp-icon.svg" alt="">
+                    <img src="./images/e-mail-icon.svg" alt="">
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>© 2025</p>
+    </footer>
 </body>
 </html>

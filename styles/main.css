@@ -1,42 +1,128 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 body {
   background-color: rgb(193, 230, 193);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* VARIABLES */
+/* @link https://utopia.fyi/type/calculator?c=320,36,1.2,1850,68,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* Step -5: 14.4676px → 22.2822px */
+/* Step -4: 17.3611px → 27.8528px */
+/* Step -3: 20.8333px → 34.816px */
+/* Step -2: 25px → 43.52px */
+/* Step -1: 30px → 54.4px */
+/* Step 0: 36px → 68px */
+/* Step 1: 43.2px → 85px */
+/* Step 2: 51.84px → 106.25px */
+/* Step 3: 62.208px → 132.8125px */
+/* Step 4: 74.6496px → 166.0156px */
+/* Step 5: 89.5795px → 207.5195px */
+/* HERO SECTION */
 .hero {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  inline-size: 100%;
+  block-size: 100vh;
 }
-.hero__text {
-  inline-size: min(95vw, 60ch);
+.hero__intro {
+  inline-size: min(100%, 70ch);
 }
-.hero__symbols {
-  display: flex;
-  justify-content: space-evenly;
+.hero__heading {
+  display: inline-block;
+  border-bottom: solid green 2px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.25rem, 1.8317rem + 2.0915vw, 4.25rem);
+  line-height: 1;
+  text-transform: uppercase;
 }
-.hero__img {
-  inline-size: min(95vw, 60ch);
+.hero__subheading {
+  font-size: clamp(1.875rem, 1.556rem + 1.5948vw, 3.4rem);
+}
+.hero__description {
+  max-width: 20ch;
+  margin-inline: auto;
+  font-size: clamp(1.5625rem, 1.3204rem + 1.2105vw, 2.72rem);
+}
+.hero__profile {
+  inline-size: min(100%, 55ch);
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+  background-color: beige;
+  overflow: hidden;
+}
+.hero__bio {
+  list-style: none;
+  font-size: clamp(1.0851rem, 0.9479rem + 0.6857vw, 1.7408rem);
+}
+.hero__arrow {
+  position: absolute;
+  bottom: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
+@media (min-width: 1048px) {
+  .hero {
+    flex-direction: row;
+  }
+}
 .skills__icons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact__icons {
+  height: 2rem;
+}
+.contact__icons img {
+  height: 2rem;
+  width: 2rem;
 }
 
 .block {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .text-center {
   text-align: center;
+}
+
+.stack-main > * + * {
+  margin-block-start: 2rem;
+}
+
+.stack-section > * + * {
+  margin-block-start: 0.5rem;
 }
 
 .padding-1 {

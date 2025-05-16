@@ -52,3 +52,6 @@ https://commons.wikimedia.org/wiki/File:Visual_Studio_Code_1.35_icon.svg
 https://commons.wikimedia.org/wiki/File:GitHub_Invertocat_Logo.svg
 https://commons.wikimedia.org/wiki/File:Git_icon.svg
 https://commons.wikimedia.org/wiki/File:Adobe_Illustrator_CC_icon.svg
+
+
+USE GRID FOR FUTURE FLEXIBILITY IN WORKS SECTION
