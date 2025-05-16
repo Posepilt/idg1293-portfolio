@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* FONTS */
+@font-face {
+  font-family: "Rubik";
+  src: url(../../assets/fonts/rubik.ttf);
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url(../../assets/fonts/taviraj.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../../assets/fonts/roboto-mono.ttf);
+}
+/* VARIABLES */
+/* @link https://utopia.fyi/type/calculator?c=300,32,1.2,1850,70,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-l&g=s,l,xl,12 */
+/* Step -6: 10.7167px → 18.3501px */
+/* Step -5: 12.8601px → 22.9376px */
+/* Step -4: 15.4321px → 28.672px */
+/* Step -3: 18.5185px → 35.84px */
+/* Step -2: 22.2222px → 44.8px */
+/* Step -1: 26.6667px → 56px */
+/* Step 0: 32px → 70px */
+/* Step 1: 38.4px → 87.5px */
+/* Step 2: 46.08px → 109.375px */
+/* Step 3: 55.296px → 136.7188px */
+/* Step 4: 66.3552px → 170.8984px */
+/* Step 5: 79.6262px → 213.623px */
+/* @link https://utopia.fyi/space/calculator?c=300,32,1.2,1850,70,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-l&g=s,l,xl,12 */
+/* Space 3xs: 8px → 18px */
+/* Space 2xs: 16px → 35px */
+/* Space xs: 24px → 53px */
+/* Space s: 32px → 70px */
+/* Space m: 48px → 105px */
+/* Space l: 64px → 140px */
+/* Space xl: 96px → 210px */
+/* Space 2xl: 128px → 280px */
+/* Space 3xl: 192px → 420px */
+/* One-up pairs */
+/* Space 3xs-2xs: 8px → 35px */
+/* Space 2xs-xs: 16px → 53px */
+/* Space xs-s: 24px → 70px */
+/* Space s-m: 32px → 105px */
+/* Space m-l: 48px → 140px */
+/* Space l-xl: 64px → 210px */
+/* Space xl-2xl: 96px → 280px */
+/* Space 2xl-3xl: 128px → 420px */
+/* Custom pairs */
+/* Space xs-l: 24px → 140px */
+/* GLOBAL */
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.9645rem, 0.8043rem + 0.8542vw, 1.792rem);
+  background-color: rgb(193, 230, 193);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO SECTION */
+.hero {
+  display: grid;
+  place-items: center;
+  inline-size: 100%;
+  block-size: 100vh;
+}
+.hero__container {
+  max-inline-size: 450px;
+  padding-inline: clamp(1rem, 0.7702rem + 1.2258vw, 2.1875rem);
+  display: grid;
+  gap: clamp(2rem, 1.5403rem + 2.4516vw, 4.375rem);
+}
+@media (min-width: 700px) {
+  .hero__container {
+    max-inline-size: 1200px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hero__intro {
+  margin-block: auto;
+}
+.hero__heading {
+  display: inline-block;
+  border-bottom: 3px solid green;
+  margin-bottom: clamp(1rem, 0.7702rem + 1.2258vw, 2.1875rem);
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 1.5403rem + 2.4516vw, 4.375rem);
+  font-weight: 400;
+  word-spacing: 0.35ch;
+}
+.hero__earth {
+  display: inline-block;
+  margin-inline: -0.3ch;
+}
+.hero__subheading {
+  font-family: "Taviraj", serif;
+  font-size: clamp(1.6667rem, 1.3118rem + 1.8925vw, 3.5rem);
+}
+.hero__description {
+  inline-size: 24ch;
+  margin-inline: auto;
+  font-size: clamp(1.1574rem, 0.9479rem + 1.1175vw, 2.24rem);
+}
+.hero__profile {
+  border-radius: clamp(1rem, 0.7702rem + 1.2258vw, 2.1875rem);
+  box-shadow: 0.25em 0.5em 1.5em rgba(0, 0, 0, 0.4);
+  background-color: beige;
+  overflow: hidden;
+}
+.hero__bio {
+  padding-block: clamp(0.5rem, 0.379rem + 0.6452vw, 1.125rem);
+  list-style: none;
+}
+.hero__arrow {
+  position: absolute;
+  bottom: clamp(1rem, 0.7702rem + 1.2258vw, 2.1875rem);
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
+}
+
+.skills__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact__icons {
+  height: 2rem;
+}
+.contact__icons img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.stack-main > * + * {
+  margin-block-start: 2rem;
+}
+
+.stack-section > * + * {
+  margin-block-start: 0.5rem;
+}
+
+.padding-1 {
+  padding: 1rem;
+}/*# sourceMappingURL=main.css.map */

@@ -29,3 +29,29 @@ The layout, animations, and styling are thoughtfully done and well integrated. N
 ## Oblig 3 improved
 FEEDBACK FROM TEACHER
 
+
+
+GITHUB PAGES
+https://posepilt.github.io/idg1293-portfolio/projects/oblig1/index.html
+
+FOR ICONS IN HERO
+https://icons8.com/icons/set/whatsapp
+
+EMOJIES:
+https://www.w3schools.com/html/html_emojis.asp
+
+SVGS IN SKILLS
+https://commons.wikimedia.org/wiki/Main_Pagehttps://commons.wikimedia.org/wiki/Main_Page
+
+https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg
+https://commons.wikimedia.org/wiki/File:CSS3_logo.svg
+https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg
+https://commons.wikimedia.org/wiki/File:Figma-logo.svg
+https://commons.wikimedia.org/wiki/File:Sass_Logo_Color.svg
+https://commons.wikimedia.org/wiki/File:Visual_Studio_Code_1.35_icon.svg
+https://commons.wikimedia.org/wiki/File:GitHub_Invertocat_Logo.svg
+https://commons.wikimedia.org/wiki/File:Git_icon.svg
+https://commons.wikimedia.org/wiki/File:Adobe_Illustrator_CC_icon.svg
+
+
+USE GRID FOR FUTURE FLEXIBILITY IN WORKS SECTION

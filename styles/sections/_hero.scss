@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as v;
+
+/* HERO SECTION */
+.hero {
+    display: grid;
+    place-items: center;
+    inline-size: 100%;
+    block-size: 100vh;
+    &__container {
+        max-inline-size: 450px;
+        padding-inline: v.$space-2xs;
+        display: grid;
+        gap: v.$space-s;
+        @media (min-width: 700px) {
+            max-inline-size: 1200px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__intro {
+        margin-block: auto;
+    }
+    &__heading {
+        display: inline-block;
+        border-bottom: 3px solid green;
+        margin-bottom: v.$space-2xs;
+        font-family: "Rubik", sans-serif;
+        text-transform: uppercase;
+        font-size: v.$step-0;
+        font-weight: 400;
+        word-spacing: 0.35ch;
+        
+    }
+    &__earth {
+        display: inline-block;
+        margin-inline: -0.3ch;
+    }
+    &__subheading {
+        font-family: "Taviraj", serif;
+        font-size: v.$step--1;
+    }
+    &__description {
+        inline-size: 24ch;
+        margin-inline: auto;
+        font-size: v.$step--3;
+    }
+    &__profile {
+        border-radius: v.$space-2xs;
+        box-shadow: 0.25em 0.5em 1.5em rgba(0, 0, 0, 0.4);
+        background-color: beige;
+        overflow: hidden;
+    }
+    &__bio {
+        padding-block: v.$space-3xs;
+        list-style: none;
+    }
+    &__arrow {
+        position: absolute;
+        bottom: v.$space-2xs;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: black;
+    }
+}
