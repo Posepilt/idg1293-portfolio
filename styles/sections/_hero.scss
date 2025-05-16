@@ -2,62 +2,63 @@
 
 /* HERO SECTION */
 .hero {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
-   inline-size: 100%;
-   block-size: 100vh;
+    display: grid;
+    place-items: center;
+    inline-size: 100%;
+    block-size: 100vh;
+    &__container {
+        max-inline-size: 450px;
+        padding-inline: v.$space-2xs;
+        display: grid;
+        gap: v.$space-s;
+        @media (min-width: 700px) {
+            max-inline-size: 1200px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
     &__intro {
-        inline-size: min(100%, 70ch);
+        margin-block: auto;
     }
     &__heading {
         display: inline-block;
-        border-bottom: solid green 2px;
-        margin-bottom: 1rem;
+        border-bottom: 3px solid green;
+        margin-bottom: v.$space-2xs;
+        font-family: "Rubik", sans-serif;
+        text-transform: uppercase;
         font-size: v.$step-0;
         font-weight: 400;
-        word-spacing: 0.2em;
-        line-height: 1.1;
-        text-transform: uppercase;
+        word-spacing: 0.35ch;
+        
     }
-    &__emoji {
-        margin-inline: -0.2em;
+    &__earth {
+        display: inline-block;
+        margin-inline: -0.3ch;
     }
     &__subheading {
+        font-family: "Taviraj", serif;
         font-size: v.$step--1;
     }
     &__description {
-        max-width: 20ch;
+        inline-size: 24ch;
         margin-inline: auto;
         font-size: v.$step--3;
     }
     &__profile {
-        inline-size: auto;
-        padding-bottom: 1rem;
-        border-radius: 2rem;
-        box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+        border-radius: v.$space-2xs;
+        box-shadow: 0.25em 0.5em 1.5em rgba(0, 0, 0, 0.4);
         background-color: beige;
         overflow: hidden;
     }
     &__bio {
+        padding-block: v.$space-3xs;
         list-style: none;
-        font-size: v.$step--5;
     }
     &__arrow {
         position: absolute;
-        bottom: 2rem;
+        bottom: v.$space-2xs;
         left: 50%;
         transform: translateX(-50%);
         text-decoration: none;
         color: black;
     }
-}
-
-@media (min-width: 1048px) {
-  .hero {
-    flex-direction: row;
-  }
 }

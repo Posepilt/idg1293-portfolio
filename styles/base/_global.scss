@@ -1,5 +1,8 @@
+@use "../abstracts/variables" as v;
 /* GLOBAL */
 body {
+    font-family: "Roboto Mono", monospace;
+    font-size: v.$step--4;
     background-color: rgb(193, 230, 193);
 }
 img {
