@@ -1,10 +1,30 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* FONTS */
+@font-face {
+  font-family: "Rubik";
+  src: url(../../assets/fonts/rubik.ttf);
+}
+.rubik {
+  font-family: "Rubik", sans-serif;
 }
 
+@font-face {
+  font-family: "Taviraj";
+  src: url(../../assets/fonts/taviraj.ttf);
+}
+.taviraj {
+  font-family: "Taviraj", serif;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../../assets/fonts/roboto-mono.ttf);
+}
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* GLOBAL */
 body {
   background-color: rgb(193, 230, 193);
 }
@@ -12,6 +32,13 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
 }
 
 /* VARIABLES */
@@ -46,8 +73,13 @@ img {
   border-bottom: solid green 2px;
   margin-bottom: 1rem;
   font-size: clamp(2.25rem, 1.8317rem + 2.0915vw, 4.25rem);
-  line-height: 1;
+  font-weight: 400;
+  word-spacing: 0.2em;
+  line-height: 1.1;
   text-transform: uppercase;
+}
+.hero__emoji {
+  margin-inline: -0.2em;
 }
 .hero__subheading {
   font-size: clamp(1.875rem, 1.556rem + 1.5948vw, 3.4rem);
@@ -55,10 +87,10 @@ img {
 .hero__description {
   max-width: 20ch;
   margin-inline: auto;
-  font-size: clamp(1.5625rem, 1.3204rem + 1.2105vw, 2.72rem);
+  font-size: clamp(1.3021rem, 1.1193rem + 0.9139vw, 2.176rem);
 }
 .hero__profile {
-  inline-size: min(100%, 55ch);
+  inline-size: auto;
   padding-bottom: 1rem;
   border-radius: 2rem;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
@@ -67,11 +99,13 @@ img {
 }
 .hero__bio {
   list-style: none;
-  font-size: clamp(1.0851rem, 0.9479rem + 0.6857vw, 1.7408rem);
+  font-size: clamp(0.9042rem, 0.8021rem + 0.5108vw, 1.3926rem);
 }
 .hero__arrow {
   position: absolute;
   bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: none;
   color: black;
 }

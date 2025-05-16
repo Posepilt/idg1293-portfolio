@@ -18,8 +18,13 @@
         border-bottom: solid green 2px;
         margin-bottom: 1rem;
         font-size: v.$step-0;
-        line-height: 1;
+        font-weight: 400;
+        word-spacing: 0.2em;
+        line-height: 1.1;
         text-transform: uppercase;
+    }
+    &__emoji {
+        margin-inline: -0.2em;
     }
     &__subheading {
         font-size: v.$step--1;
@@ -27,10 +32,10 @@
     &__description {
         max-width: 20ch;
         margin-inline: auto;
-        font-size: v.$step--2;
+        font-size: v.$step--3;
     }
     &__profile {
-        inline-size: min(100%, 55ch);
+        inline-size: auto;
         padding-bottom: 1rem;
         border-radius: 2rem;
         box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
@@ -39,11 +44,13 @@
     }
     &__bio {
         list-style: none;
-        font-size: v.$step--4;
+        font-size: v.$step--5;
     }
     &__arrow {
         position: absolute;
         bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
         text-decoration: none;
         color: black;
     }
